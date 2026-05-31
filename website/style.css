@@ -616,8 +616,8 @@ flex-wrap:wrap;
 
 .btn{
 display:block;
-width:320px;
-max-width:90%;
+width:95%;
+max-width:650px;
 margin:15px auto;
 padding:18px;
 border-radius:20px;
@@ -711,7 +711,7 @@ transform:scale(1.03);
 
 color:white;
 
-font-size:28px;
+font-size:34px;
 
 margin-bottom:20px;
 
@@ -727,13 +727,13 @@ background:#ffd700;
 
 color:#001d4d;
 
-padding:15px 30px;
+padding:18px 35px;
 
 border-radius:20px;
 
 text-decoration:none;
 
-font-size:22px;
+font-size:28px;
 
 font-weight:bold;
 
@@ -1128,12 +1128,10 @@ min-height:100vh;
 .container,
 .menu{
 width:100%;
-max-width:430px;
+max-width:600px;
 min-height:100vh;
 margin:auto;
 padding:20px;
-position: relative;
-overflow: hidden;
 }
 
 body{
@@ -1153,13 +1151,14 @@ height:auto;
 .back{
 width:100%;
 max-width:320px;
-margin:15px auto;
+margin:1px auto;
 display:block;
 }
 
 .videoBox{
-width:100%;
-margin:auto;
+width:95%;
+margin:20px auto;
+padding:30px;
 }
 .azkar-page{
 background:

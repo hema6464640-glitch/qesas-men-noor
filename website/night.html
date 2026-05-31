@@ -323,6 +323,27 @@ font-size:22px;
 
 </div>
 
+<!-- آية الكرسي -->
+
+<div class="zekr" onclick="decrease(this)">
+
+<div class="counter">1</div>
+
+<div class="surah-title">آية الكرسي</div>
+
+<span class="small-basmala">
+بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+</span>
+
+<span class="quran">
+ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٌ وَلَا نَوْمٌ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ (255)
+</span>
+
+<span class="small-text" style="display: block; text-align: left;"> أول سورة البقرة وآية الكرسي وآخر سورة البقرة
+</span>
+
+</div>
+
 <!-- البقرة -->
 
 <div class="zekr" onclick="decrease(this)">
@@ -341,26 +362,6 @@ font-size:22px;
 
 </div>
 
-<!-- آية الكرسي -->
-
-<div class="zekr" onclick="decrease(this)">
-
-<div class="counter">1</div>
-
-<div class="surah-title">آية الكرسي</div>
-
-<span class="small-basmala">
-بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-</span>
-
-<span class="quran">
-ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ (255)
-</span>
-
-<span class="small-text" style="display: block; text-align: left;"> أول سورة البقرة وآية الكرسي وآخر سورة البقرة
-</span>
-
-</div>
 <!-- الإخلاص -->
 
 <div class="zekr" onclick="decrease(this)">
@@ -699,7 +700,7 @@ window.onload = function(){
 
 counters.forEach((counter,index)=>{
 
-let saved = localStorage.getItem("zekr_"+index);
+let saved = localStorage.getItem("night_zekr_"+index);
 
 if(parseInt(saved) === 0){
 
@@ -729,7 +730,7 @@ let index =
 Array.from(document.querySelectorAll(".zekr"))
 .indexOf(element);
 
-localStorage.setItem("zekr_"+index,number);
+localStorage.setItem("night_zekr_"+index,number);
 
 }
 
@@ -745,7 +746,9 @@ counter.innerHTML = "✓";
 
 function resetAzkar(){
 
-localStorage.clear();
+for(let i=0;i<1000;i++){
+localStorage.removeItem("night_zekr_"+i);
+}
 
 location.reload();
 
