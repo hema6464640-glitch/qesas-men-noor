@@ -699,7 +699,7 @@ window.onload = function(){
 
 counters.forEach((counter,index)=>{
 
-let saved = localStorage.getItem("zekr_"+index);
+let saved = localStorage.getItem("night_zekr_"+index);
 
 if(parseInt(saved) === 0){
 
@@ -729,7 +729,7 @@ let index =
 Array.from(document.querySelectorAll(".zekr"))
 .indexOf(element);
 
-localStorage.setItem("zekr_"+index,number);
+localStorage.setItem("night_zekr_"+index,number);
 
 }
 
@@ -745,7 +745,9 @@ counter.innerHTML = "✓";
 
 function resetAzkar(){
 
-localStorage.clear();
+for(let i=0;i<1000;i++){
+localStorage.removeItem("night_zekr_"+i);
+}
 
 location.reload();
 
