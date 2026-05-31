@@ -1128,7 +1128,7 @@ min-height:100vh;
 .container,
 .menu{
 width:100%;
-max-width:800px;
+max-width:600px;
 min-height:100vh;
 margin:auto;
 padding:20px;
@@ -1151,14 +1151,14 @@ height:auto;
 .back{
 width:100%;
 max-width:320px;
-margin:15px auto;
+margin:1px auto;
 display:block;
 }
 
 .videoBox{
 width:95%;
 margin:20px auto;
-padding:35px;
+padding:30px;
 }
 .azkar-page{
 background:
