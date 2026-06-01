@@ -87,7 +87,7 @@ transform:translateY(-500px);
 .container{
 
 width:100%;
-max-width:430px;
+max-width:900px;
 
 margin:auto;
 
@@ -111,19 +111,17 @@ text-shadow:0 0 15px gold;
 
 background:rgba(255,255,255,0.08);
 
-padding:25px;
+padding:30px;
 
-padding-left:90px;
+padding-top:80px;
 
-margin:25px 0;
+margin:30px 0;
 
 border-radius:25px;
 
-font-size:30px;
+font-size:28px;
 
-line-height:2.2;
-
-color:white;
+line-height:2.5;
 
 position:relative;
 
@@ -170,7 +168,6 @@ z-index:5;
 flex-shrink:0;
 
 }
-
 .done{
 
 opacity:0.5;
@@ -179,7 +176,7 @@ opacity:0.5;
 
 .surah-title{
 
-font-size:38px;
+font-size:30px;
 
 color:#ffd700;
 
@@ -193,25 +190,28 @@ font-weight:bold;
 
 .quran{
 font-family:'Amiri Quran', serif;
-font-size:32px;
-line-height:2.5;
+font-size:30px;
+line-height:2.6;
 display:block;
-margin-top:15px;
+margin-top:10px;
 }
 
-.small-basmala,
-.small-text{
-
+.small-basmala{
 display:block;
-
 font-size:22px;
-
 color:#ffe082;
-
 margin-bottom:15px;
-
 line-height:2;
+text-align:right;
+}
 
+.small-text{
+display:block;
+font-size:20px;
+color:#ffe082;
+line-height:2;
+margin-top:25px;
+text-align:left;
 }
 
 .back{
@@ -240,24 +240,18 @@ box-shadow:0 0 20px gold;
 
 }
 
-@media(max-width:768px){
-
-h1{
-font-size:34px;
-}
-
 .zekr{
 
-font-size:25px;
+font-size:28px;
 
 line-height:2.3;
 
-padding:24px;
+padding:70px;
 
 }
 
 .surah-title{
-font-size:31px;
+font-size:30px;
 }
 
 .counter{
@@ -266,8 +260,6 @@ width:50px;
 height:50px;
 
 font-size:22px;
-
-}
 
 }
 
@@ -289,7 +281,7 @@ font-size:22px;
 
 <div class="surah-title">سورة الفاتحة</div>
 
-<span class="small-text">
+<span class="small-basmala">
 أعوذ بالله من الشيطان الرجيم
 </span>
 
